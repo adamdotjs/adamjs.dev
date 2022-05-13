@@ -18,14 +18,8 @@ const Nav = () => {
 			transition={{ delay: 0.6 }}
 		>
 			<Flex as="nav" css={{ gap: '$600', justifyContent: 'flex-end' }}>
-				<Link href="/blog" passHref>
-					<NavLink>Blog</NavLink>
-				</Link>
-				<Link href="/projects" passHref>
-					<NavLink>Projects</NavLink>
-				</Link>
-				<Link href="/resume" passHref>
-					<NavLink>Resume</NavLink>
+				<Link href="/resume.pdf" target="_blank" rel="noopener noreferrer" passHref>
+					<NavLink>Resumé</NavLink>
 				</Link>
 			</Flex>
 		</Box>

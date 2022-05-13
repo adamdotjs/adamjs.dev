@@ -2,6 +2,7 @@ import { styled } from '../stitches.config';
 
 const Button = styled('button', {
 	all: 'unset',
+	cursor: 'pointer',
 	border: '4px solid transparent',
 	borderRadius: '999px',
 	background: '$orange',

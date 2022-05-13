@@ -13,11 +13,6 @@ export const { styled, css, globalCss, keyframes, theme, createTheme, getCssText
 				base700: '#535E74',
 				base800: '#41495A',
 				base900: '#2E3440',
-				gray500: 'hsl(206,10%,76%)',
-				blue500: 'hsl(206,100%,50%)',
-				purple500: 'hsl(252,78%,60%)',
-				green500: 'hsl(148,60%,60%)',
-				red500: 'hsl(352,100%,62%)',
 				orange: '#EA580C',
 			},
 			space: {

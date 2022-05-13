@@ -1,7 +1,6 @@
 import { css } from '../stitches.config';
 import { motion } from 'framer-motion';
 import Box from '../components/Box';
-import Bouncer from '../components/Bouncer';
 import Flex from '../components/Flex';
 import Grid from '../components/Grid';
 import Heading from '../components/Heading';
@@ -11,6 +10,7 @@ import Stack from '../components/Stack';
 import Nav from '../components/Nav';
 import Socials from '../components/Socials';
 import Button from '../components/Button';
+import Bouncer from '../components/Bouncer';
 
 export default function Home() {
 	return (
@@ -21,7 +21,7 @@ export default function Home() {
 						<Nav />
 					</Box>
 					<Heading
-						css={{ fontSize: '$900', textTransform: 'uppercase', marginBlockStart: '$700' }}
+						css={{ fontSize: '$800', marginBlockStart: '$700' }}
 						as={motion.h1}
 						initial={{ y: '-200%' }}
 						animate={{ y: '0' }}
@@ -29,7 +29,7 @@ export default function Home() {
 						Hey,
 					</Heading>
 					<Heading
-						css={{ fontSize: '$900', textTransform: 'uppercase' }}
+						css={{ fontSize: '$900' }}
 						as={motion.h1}
 						initial={{ y: '-300%' }}
 						animate={{ y: '0' }}
@@ -46,11 +46,11 @@ export default function Home() {
 						},
 					}}
 				>
+					<Bouncer />
 					<Text>
-						I&apos;m a US based junior software engineer. I specialise in front end web development
-						for mobile and web-based applications with a focus on user experience &amp;
-						accessibility. I&apos;ve always had a passion for building things and decided being a
-						developer would be a great way to do it professionally.
+						I&apos;m a software engineer based in MA, USA. I specialise in front end web
+						development. I&apos;ve always loved to build things and make them work, so I decided
+						pursuing software engineering would be a great way to do it professionally.
 					</Text>
 					<Text>
 						I&apos;m currently open for work opportunities and am looking for a home I can continue
@@ -64,24 +64,15 @@ export default function Home() {
 				as="footer"
 				direction={{ '@initial': 'column', '@bp3': 'row' }}
 				css={{
-					marginBlockStart: '$900',
+					marginBlockStart: '$700',
+					gap: '$600',
+					justifyContent: 'space-between',
 				}}
 			>
 				<Socials />
-				<Box
-					css={{
-						fontSize: '$400',
-						fontWeight: 'bold',
-						textAlign: 'center',
-						marginBlockStart: '$400',
-						'@bp3': {
-							marginBlockStart: '0',
-							marginLeft: 'auto',
-						},
-					}}
-				>
-					<Button>Get in touch</Button>
-				</Box>
+				<Button as="a" href="mailto:adamdotjs@gmail.com">
+					Get in touch
+				</Button>
 			</Flex>
 		</Container>
 	);

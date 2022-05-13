@@ -21,7 +21,7 @@ const Socials = () => {
 					<BsGithub />
 				</a>
 			</Link>
-			<Link href="https://www.linkedin.com/in/adam-shea-41990898/" passHref>
+			<Link href="https://www.linkedin.com/in/adamdotjs/" passHref>
 				<a>
 					<BsLinkedin />
 				</a>
