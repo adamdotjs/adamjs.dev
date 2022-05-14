@@ -48,15 +48,14 @@ export default function Home() {
 				>
 					<Bouncer />
 					<Text>
-						I&apos;m a software engineer based in MA, USA. I specialise in front end web
-						development. I&apos;ve always loved to build things and make them work, so I decided
-						pursuing software engineering would be a great way to do it professionally.
+						I&apos;m a software engineer based in the US and specialise in front end web
+						development.
 					</Text>
 					<Text>
-						I&apos;m currently open for work opportunities and am looking for a home I can continue
-						to grow and learn. I was with my previous company in the commercial printing industry
-						for almost fifteen years and have experience with product management, problem solving
-						and developing solutions to make life easier.
+						I&apos;ve always loved to build things and make them work, so I decided pursuing
+						software engineering would be a great way to do it professionally. Outside of web
+						development, I have almost fifteen years of experience with project management, problem
+						solving and creating solutions to make life easier for myself and those I work with.
 					</Text>
 				</Stack>
 			</Grid>
@@ -67,6 +66,7 @@ export default function Home() {
 					marginBlockStart: '$700',
 					gap: '$600',
 					justifyContent: 'space-between',
+					paddingBottom: '$600',
 				}}
 			>
 				<Socials />
