@@ -39,9 +39,5 @@ export const globalStyles = globalCss({
 	a: {
 		cursor: 'pointer',
 		color: 'CurrentColor',
-		transition: 'color 200ms',
-		'&:hover': {
-			color: '$orange',
-		},
 	},
 });
