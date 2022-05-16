@@ -1,4 +1,5 @@
 import { styled } from '../stitches.config';
+import Head from 'next/head';
 import Cat from '../components/scene/Cat';
 import Curtains from '../components/scene/Curtains';
 import Ground from '../components/scene/Ground';
@@ -25,20 +26,25 @@ const Wrapper = styled('div', {
 
 const Game = () => {
 	return (
-		<Wrapper>
-			<Hero />
-			<Scene>
-				<Cat />
-				<Curtains />
-				<Trees />
-				<MiniTrees />
-				<Mountains />
-				<LeftSpiral />
-				<RightSpiral />
-				<SmallSpiral />
-				<Ground />
-			</Scene>
-		</Wrapper>
+		<>
+			<Head>
+				<title>Adam Shea | Front-end Developer</title>
+			</Head>
+			<Wrapper>
+				<Hero />
+				<Scene>
+					<Cat />
+					<Curtains />
+					<Trees />
+					<MiniTrees />
+					<Mountains />
+					<LeftSpiral />
+					<RightSpiral />
+					<SmallSpiral />
+					<Ground />
+				</Scene>
+			</Wrapper>
+		</>
 	);
 };
 
