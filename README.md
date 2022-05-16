@@ -1,34 +1,25 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# AdamJS.dev
 
-## Getting Started
+This is my personal website! It was inspired by a certain video game from the 90's, but since I can't use their character I used a cat instead (of course).
 
-First, run the development server:
+**Link to project:** https://adamjs.dev
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+![adamjs.dev](screenshot.png)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## How It's Made:
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+**Tech used:** NextJS, Stitches, Radix UI
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+Using NextJS and React for this project is definitely overkill, but I wanted to use something I could scale up if needed, should I decide to add a blog section or portfolio in the future.
+At first I built all of the animations out in plain CSS but then converted it all into React components using NextJS and the Stitches CSS in JS framework (which I'm in love with).
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+I made all of the graphics from scratch in Figma with the exception of the cat sprite.
 
-## Learn More
+## Optimizations
 
-To learn more about Next.js, take a look at the following resources:
+I tried handling the parallax animations in two ways -- The first with plain CSS and the second with Framer Motion. Surprisingly, the plain CSS animations seemed to have much better visual and performance results based on testing on my own computer and mobile devices. Even though Framer uses GPU scaling, I found the animations to be significantly smoother using plain CSS and my GPU was using ~15% less running them over Framer.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Lessons Learned:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+This was my first time trying a parallax effect, and was surprised at how easy it is once you have the graphics built out. I'd imagine scroll parallax is more complicated.
+I introduced Radix UI components into this project to get more of a handle on accessibility requirements. I utilized their tooltips for the buttons, and also used the `<title>` tag inside the react-icons items to ensure screen reader compatability. I used a screen reader to check the page and all seemed to work well, including having an image set as an H1 which I was hesitant about.

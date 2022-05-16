@@ -4,16 +4,12 @@ export const { styled, css, globalCss, keyframes, theme, createTheme, getCssText
 	{
 		theme: {
 			colors: {
-				base100: '#EDEFF2',
-				base200: '#D5D9E1',
-				base300: '#B5BCCA',
-				base400: '#98A1B5',
-				base500: '#7E8AA2',
-				base600: '#66738E',
-				base700: '#535E74',
-				base800: '#41495A',
-				base900: '#2E3440',
+				blue: '#0B9BD7',
+				green: '#45AF4A',
+				yellow: '#FACF07',
+				gold: '#00bb00',
 				orange: '#EA580C',
+				red: '#E52927',
 			},
 			space: {
 				100: 'clamp(0.25rem, calc(0.23rem + 0.09vw), 0.31rem)',

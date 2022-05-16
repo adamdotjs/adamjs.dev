@@ -16,10 +16,9 @@ const Cat = styled('div', {
 	backgroundImage: 'url(./layers/cat.svg)',
 	backgroundRepeat: 'no-repeat',
 	backgroundSize: 'cover',
-	animation: `${walk} 0.8s steps(4) infinite reverse`,
 
-	'@media (prefers-reduced-motion)': {
-		animation: 'none',
+	'@media (prefers-reduced-motion: no-preference)': {
+		animation: `${walk} 600ms steps(4) infinite reverse`,
 	},
 });
 
