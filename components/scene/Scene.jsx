@@ -16,11 +16,10 @@ const Scene = styled('div', {
 		position: 'absolute',
 		width: '5120px',
 		backgroundRepeat: 'repeat-x',
-		animation: `${parallax} linear infinite`,
 		willChange: 'transform',
 
-		'@media (prefers-reduced-motion)': {
-			animation: 'none',
+		'@media (prefers-reduced-motion: no-preference)': {
+			animation: `${parallax} linear infinite`,
 		},
 	},
 });
