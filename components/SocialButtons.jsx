@@ -9,7 +9,7 @@ import {
 	RiFileUserLine,
 } from 'react-icons/ri';
 
-const SocialIcon = styled('li', {
+const SocialIcon = styled('div', {
 	cursor: 'pointer',
 	display: 'grid',
 	placeContent: 'center',
@@ -32,6 +32,7 @@ const SocialButtonsWrapper = styled('ul', {
 	display: 'flex',
 	padding: 0,
 	fontSize: '36px',
+	listStyle: 'none',
 });
 
 const TooltipContent = styled(Tooltip.Content, {
@@ -60,13 +61,15 @@ const TooltipContent = styled(Tooltip.Content, {
 const SocialButton = ({ link, icon, tooltip }) => {
 	return (
 		<Tooltip.Root delayDuration={0}>
-			<Link href={link} passHref>
-				<Tooltip.Trigger asChild>
-					<a>
-						<SocialIcon>{icon}</SocialIcon>
-					</a>
-				</Tooltip.Trigger>
-			</Link>
+			<Tooltip.Trigger asChild>
+				<li>
+					<Link href={link}>
+						<a>
+							<SocialIcon>{icon}</SocialIcon>
+						</a>
+					</Link>
+				</li>
+			</Tooltip.Trigger>
 			<TooltipContent sideOffset={10}>{tooltip}</TooltipContent>
 		</Tooltip.Root>
 	);
