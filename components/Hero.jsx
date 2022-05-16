@@ -5,7 +5,7 @@ import SocialButtons from './SocialButtons';
 
 const HeroWrapper = styled('main', {
 	maxWidth: '1400px',
-	paddingTop: '15vh',
+	paddingTop: '18vh',
 	height: '100vh',
 	gridColumn: '1/-1',
 	gridRow: '1/-1',
@@ -14,7 +14,7 @@ const HeroWrapper = styled('main', {
 	display: 'flex',
 	flexDirection: 'column',
 	alignItems: 'center',
-	gap: '3vh',
+	gap: '4vh',
 });
 
 const NameGraphic = styled('h1', {
