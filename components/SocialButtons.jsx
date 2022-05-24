@@ -98,11 +98,6 @@ const SocialButtons = () => {
 				icon={<RiMailSendLine title="E-mail" />}
 				tooltip="Send me an e-mail"
 			/>
-			<SocialButton
-				link="/Adam_Shea.pdf"
-				icon={<RiFileUserLine title="Resumé" />}
-				tooltip="View my resumé"
-			/>
 		</SocialButtonsWrapper>
 	);
 };
